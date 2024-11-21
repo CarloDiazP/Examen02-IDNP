@@ -66,14 +66,14 @@ public class RoomView extends View {
         pictureRegionList = new HashMap<>();
 
         picturePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        picturePaint.setColor(Color.parseColor("#ff9800"));
+        picturePaint.setColor(Color.parseColor("#45ff6a"));
         //picturePaint.setStrokeWidth(10f);
         //picturePaint.setStyle(Paint.Style.STROKE);
         picturePaint.setMaskFilter(new BlurMaskFilter(10, BlurMaskFilter.Blur.SOLID));
 
         doorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        doorPaint.setColor(Color.parseColor("#ff9800"));
-        doorPaint.setStrokeWidth(10f);
+        doorPaint.setColor(Color.parseColor("#5adac9"));
+        doorPaint.setStrokeWidth(30f);
         doorPaint.setStyle(Paint.Style.STROKE);
 
         pictureIconTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);

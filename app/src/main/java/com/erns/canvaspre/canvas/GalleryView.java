@@ -60,16 +60,16 @@ public class GalleryView extends View {
 
         wallPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         wallPaint.setColor(Color.parseColor("#2e1700"));
-        wallPaint.setStrokeWidth(10f);
+        wallPaint.setStrokeWidth(7f);
         wallPaint.setStyle(Paint.Style.STROKE);
 
         doorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        doorPaint.setColor(Color.parseColor("#ff9800"));
-        doorPaint.setStrokeWidth(10f);
+        doorPaint.setColor(Color.parseColor("#5adac9"));
+        doorPaint.setStrokeWidth(30f);
         doorPaint.setStyle(Paint.Style.STROKE);
 
         picturePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        picturePaint.setColor(Color.parseColor("#ff9800"));
+        picturePaint.setColor(Color.parseColor("#45ff6a"));
         picturePaint.setMaskFilter(new BlurMaskFilter(10, BlurMaskFilter.Blur.SOLID));
 
         pictureIconTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
