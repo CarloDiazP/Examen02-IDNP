@@ -21,6 +21,7 @@ import com.erns.canvaspre.canvas.RoomViewListener;
 import com.erns.canvaspre.controller.EventViewModel;
 import com.erns.canvaspre.fragments.HomeFragment;
 import com.erns.canvaspre.fragments.GalleryFragment;
+import com.erns.canvaspre.fragments.ListaPinturasFragment;
 import com.erns.canvaspre.fragments.PictureFragment;
 import com.erns.canvaspre.fragments.RoomFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity
     private GalleryFragment galleryFragment;
     private PictureFragment pictureFragment;
     private RoomFragment roomFragment;
-
+    private ListaPinturasFragment listaPinturasFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,7 +102,11 @@ public class MainActivity extends AppCompatActivity
                 galleryFragment = GalleryFragment.newInstance();
                 loadFragment(galleryFragment);
                 return true;
-            } else {
+            } else if (item.getItemId() == R.id.menu_map_pinturas) {
+                listaPinturasFragment = ListaPinturasFragment.newInstance("", "");
+                loadFragment(listaPinturasFragment);
+                return true;
+            }else {
                 return false;
             }
         }

@@ -9,4 +9,8 @@
         android:id="@+id/menu_map_room"
         android:icon="@drawable/baseline_album_24"/>
 
+    <item android:title="Pinturas"
+        android:id="@+id/menu_map_pinturas"
+        android:icon="@drawable/baseline_album_24"/>
+
 </menu>
